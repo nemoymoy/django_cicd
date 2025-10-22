@@ -46,7 +46,7 @@ jobs:
         run: flake8 logistic/ --exclude=logistic/migrations
 
       - name: Testing
-        run: pythone manage.py test
+        run: python manage.py test
         env:
           DEBUG: ${{ secrets.DEBUG_MODE }}
           ALLOWED: ${{ secrets.ALLOWED_HOSTS }}
