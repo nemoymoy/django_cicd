@@ -6,7 +6,7 @@ on:
 
 jobs:
   testing:
-    runs-on: Ubuntu 24.04 LTS
+    runs-on: ubuntu-latest
     env:
       DEBUG: ${{ secrets.DEBUG_MODE }}
       ALLOWED: ${{ secrets.ALLOWED_HOSTS }}
