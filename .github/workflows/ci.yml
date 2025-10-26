@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DEBUG: ${{ secrets.DEBUG_MODE }}
-      ALLOWED: ${{ secrets.ALLOWED_HOSTS }}
+      ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
       DB_ENGINE: ${{ secrets.DB_ENGINE }}
       DB_NAME: ${{ secrets.DB_NAME }}
       DB_USER: ${{ secrets.DB_USER }}
@@ -49,7 +49,7 @@ jobs:
         run: python manage.py test
         env:
           DEBUG: ${{ secrets.DEBUG_MODE }}
-          ALLOWED: ${{ secrets.ALLOWED_HOSTS }}
+          ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
           DB_ENGINE: ${{ secrets.DB_ENGINE }}
           DB_NAME: ${{ secrets.DB_NAME }}
           DB_USER: ${{ secrets.DB_USER }}
