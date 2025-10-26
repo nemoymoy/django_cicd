@@ -31,8 +31,8 @@ SECRET_KEY = get_random_secret_key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-#ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
+#ALLOWED_HOSTS = ['*']
 
 
 # Application definition
